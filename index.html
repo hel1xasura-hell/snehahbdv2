@@ -1,136 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy 17th Birthday Sneha ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>🎂 Happy 17th Birthday, Sneha! 🌸</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<!-- Background Effects -->
+
+<div id="backgroundEffects"></div>
+
+<!-- Loading Screen -->
+
 <div id="loading-screen">
-    <h1>A little surprise is loading... 🌸</h1>
+
+<h1>
+
+A little surprise made especially for you... 🌸
+
+</h1>
+
 </div>
 
+<!-- Floating Particles -->
+
 <div id="particles"></div>
+
+<!-- ========================= -->
+
+<!-- HERO SECTION -->
+
+<!-- ========================= -->
 
 <section class="hero">
 
 <h1 class="title">
-🎉 Happy 17th Birthday Sneha 🎉
+
+🎉 Happy 17th Birthday 🎉
+
 </h1>
 
-<p class="subtitle">
-Wishing you a day filled with happiness, laughter and unforgettable memories.
-</p>
+<h2 class="name">
 
-<button id="openBtn">
-🎁 Open Your Surprise
-</button>
-
-</section>
-
-<section id="surprise" style="display:none;">
-
-<div class="card">
-
-<h2>Dear Sneha 🌸</h2>
-
-<p id="message">
-
-<!-- Birthday message will come here in Part 2 -->
-
-</p>
-
-</div>
-
-<section class="friendship">
-
-<h2>🌸 One Year of Friendship 🌸</h2>
-
-<p>
-
-It's amazing how quickly time flies.
-It's hard to believe it's already been a whole year since we first met.
-
-Thank you for being such a wonderful friend,
-and here's to many more amazing years of friendship.
-
-Happy 17th Birthday!
-
-</p>
-
-</section>
-
-<section class="cake">
-
-<h2>🎂 Birthday Cake</h2>
-
-<img src="images/cake.png" alt="Cake">
-
-<button id="wishBtn">
-
-🕯️ Blow Out The Candles
-
-</button>
-
-</section>
-
-<section class="flowers">
-
-<h2>💐 Flowers For You</h2>
-
-<img src="images/flowers.png" alt="Flowers">
-
-</section>
-
-<section class="wishes">
-
-<h2>Best Wishes</h2>
-
-<div class="wish-card">🌈 May every dream come true.</div>
-
-<div class="wish-card">😊 Keep smiling always.</div>
-
-<div class="wish-card">💖 Stay blessed.</div>
-
-<div class="wish-card">🌸 Enjoy your wonderful 17th year.</div>
-
-<div class="wish-card">🎓 Wishing you success in everything.</div>
-
-</section>
-
-<footer>
-
-<h2>
-
-Happy Birthday Once Again Sneha 🎉
+Sneha 🌸
 
 </h2>
 
-<p>
+<p class="subtitle">
 
-Made with warm wishes for my wonderful friend.
-
-Have an amazing birthday!
+Celebrating an amazing friend on her special day.
 
 </p>
+
+    <!-- ========================= -->
+<!-- GIFT SECTION -->
+<!-- ========================= -->
+
+<div class="gift-container">
+
+    <div class="gift-box" id="openBtn">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-body">
+
+            🎁
+
+        </div>
+
+    </div>
+
+    <h3 class="gift-text">
+
+        Click the gift to open your birthday surprise!
+
+    </h3>
+
+</div>
+
+<!-- Music Controls -->
+
+<div class="music-controls">
+
+    <button id="playMusic">
+
+        ▶ Play
+
+    </button>
+
+    <button id="pauseMusic">
+
+        ⏸ Pause
+
+    </button>
+
+    <label for="volume">
+
+        🔊 Volume
+
+    </label>
+
+    <input
+        type="range"
+        id="volume"
+        min="0"
+        max="1"
+        step="0.1"
+        value="0.5">
+
+</div>
+
+<!-- Scroll Down -->
+
+<div class="scroll-indicator">
+
+    <span>Scroll Down</span>
+
+    <div class="arrow">
+
+        ↓
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SURPRISE SECTION -->
+<!-- ========================= -->
+
+<section id="surprise" style="display:none;">
+
+<!-- Envelope -->
+
+<section class="envelope-section">
+
+    <h2>
+
+        💌 A Letter For You
+
+    </h2>
+
+    <div class="envelope" id="envelope">
+
+        💌
+
+    </div>
+
+    <p>
+
+        Click the envelope to read your birthday letter.
+
+    </p>
+
+    </section>
+
+    <!-- ========================= -->
+<!-- BIRTHDAY LETTER -->
+<!-- ========================= -->
+
+<section class="letter-section">
+
+    <div class="card">
+
+        <h2>
+
+            <!-- ========================= -->
+<!-- BIRTHDAY CAKE -->
+<!-- ========================= -->
+
+<section class="cake">
+
+    <h2>
+
+        🎂 Birthday Cake 🎂
+
+    </h2>
+
+    <p>
+
+        Every birthday deserves a delicious cake and a special wish.
+
+    </p>
+
+    <!-- Candle -->
+
+    <div class="candle">
+
+        <div class="flame" id="flame"></div>
+
+    </div>
+
+    <!-- Cake Image -->
+
+    <img
+        src="images/cake.png"
+        alt="Birthday Cake"
+        class="cake-image">
+
+    <br><br>
+
+    <button id="wishBtn">
+
+        🕯️ Blow Out The Candles
+
+    </button>
+
+</section>
+
+<!-- ========================= -->
+<!-- FLOWER GARDEN -->
+<!-- ========================= -->
+
+<section class="flowers">
+
+    <h2>
+
+        💐 Flowers For You 💐
+
+    </h2>
+
+    <p>
+
+        May your life always bloom with happiness, kindness, success, and beautiful memories.
+
+    </p>
+
+    <img
+        src="images/flowers.png"
+        alt="Beautiful Flowers"
+        class="flower-image">
+
+</section>
+
+<!-- ========================= -->
+<!-- MINI WISHES -->
+<!-- ========================= -->
+
+<section class="wishes">
+
+    <h2>
+
+        🌈 Best Wishes 🌈
+
+    </h2>
+
+    <div class="wish-card">
+
+        🌸 May every day bring you happiness.
+
+    </div>
+
+    <div class="wish-card">
+
+        ⭐ May all your dreams come true.
+
+    </div>
+
+    <div class="wish-card">
+
+        😊 Keep smiling and shining.
+
+    </div>
+
+    <div class="wish-card">
+
+        🎓 Wishing you success in everything you do.
+
+    </div>
+
+    <div class="wish-card">
+
+        💖 Stay healthy, stay happy, and always believe in yourself.
+
+    </div>
+
+    </section>
+
+            
+            Dear Sneha 🌸
+
+        </h2>
+
+        <p id="message">
+
+            <!-- The typewriter effect will write the birthday message here -->
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ONE YEAR OF FRIENDSHIP -->
+<!-- ========================= -->
+
+<section class="friendship">
+
+    <h2>
+
+        🌸 One Year of Friendship 🌸
+
+    </h2>
+
+    <div class="friendship-card">
+
+        <p>
+
+            It's amazing how quickly time flies.
+            It's hard to believe it's already been a whole year since we first met.
+
+        </p>
+
+        <p>
+
+            Thank you for being such a wonderful friend.
+            I'm really grateful our paths crossed, and I hope our friendship continues to grow with many more happy memories ahead.
+
+        </p>
+
+        <p>
+
+            Wishing you a birthday filled with laughter, happiness, success, good health, and countless reasons to smile.
+
+        </p>
+
+        <p>
+
+            Happy 17th Birthday, Sneha! 🌸🎂
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FRIENDSHIP QUOTE -->
+<!-- ========================= -->
+
+<section class="quote">
+
+    <blockquote>
+
+        "Friendship isn't measured by how long you've known someone,
+        but by the memories you've shared together."
+
+    </blockquote>
+
+        </section>
+
+    <!-- ========================= -->
+<!-- MEMORY GALLERY (OPTIONAL) -->
+<!-- ========================= -->
+
+<section class="gallery">
+
+    <h2>
+
+        📸 Our Memories
+
+    </h2>
+
+    <p>
+
+        Every friendship is made up of beautiful little moments.
+
+    </p>
+
+    <div class="gallery-container">
+
+        <img src="images/photo1.jpg" alt="Memory 1">
+
+        <img src="images/photo2.jpg" alt="Memory 2">
+
+        <img src="images/photo3.jpg" alt="Memory 3">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL QUOTE -->
+<!-- ========================= -->
+
+<section class="final-quote">
+
+    <h2>
+
+        🌸 A Little Message 🌸
+
+    </h2>
+
+    <p>
+
+        Friendship isn't about how long you've known someone.
+        It's about the memories you've created together.
+
+        Thank you for making this past year full of wonderful memories.
+
+        Wishing you happiness, success, good health and countless reasons to smile.
+
+        Happy 17th Birthday, Sneha!
+
+    </p>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <h2>
+
+        🎉 Happy 17th Birthday Once Again! 🎉
+
+    </h2>
+
+    <p>
+
+        May this year bring you endless smiles,
+        exciting adventures,
+        wonderful opportunities,
+        good health,
+        and every happiness you deserve.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        🌸 Made with warm wishes by your friend, Ayush 🌸
+
+    </p>
 
 </footer>
 
 </section>
 
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
 <audio id="music" loop>
 
-<source src="music/happybirthday.mp3" type="audio/mpeg">
+    <source
+        src="music/happybirthday.mp3"
+        type="audio/mpeg">
 
 </audio>
+
+<!-- Back To Top -->
+
+<button id="topBtn">
+
+⬆
+
+</button>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,1205 @@
+/* ==========================
+   Google Fonts
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap');
+
+/* ==========================
+   Reset
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(
+135deg,
+#ffe4ef,
+#fff0f6,
+#ffe8f1,
+#fff6fb
+);
+
+overflow-x:hidden;
+
+color:#444;
+
+}
+
+/* ==========================
+Loading Screen
+========================== */
+
+#loading-screen{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#ffd6ea;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+z-index:9999;
+
+animation:fadeOut 3s forwards;
+
+}
+
+#loading-screen h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:45px;
+
+color:#ff4d88;
+
+animation:float 2s infinite;
+
+}
+
+/* ==========================
+Hero
+========================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:75px;
+
+color:#ff4d88;
+
+text-shadow:
+
+0 0 10px white,
+0 0 20px pink,
+0 0 40px hotpink;
+
+animation:glow 2s infinite alternate;
+
+}
+
+.subtitle{
+
+margin-top:20px;
+
+font-size:22px;
+
+max-width:700px;
+
+line-height:1.8;
+
+}
+
+#openBtn{
+
+margin-top:40px;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff6ea8;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(255,0,120,.3);
+
+}
+
+#openBtn:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+background:#ff3c89;
+
+}
+
+/* ==========================
+Card
+========================== */
+
+.card{
+
+width:90%;
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:45px;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+box-shadow:
+
+0 15px 45px rgba(255,105,180,.18);
+
+}
+
+.card h2{
+
+font-size:40px;
+
+color:#ff4d88;
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+.card p{
+
+font-size:20px;
+
+line-height:2;
+
+}
+
+/* ==========================
+Friendship
+========================== */
+
+.friendship{
+
+width:90%;
+
+max-width:900px;
+
+margin:50px auto;
+
+padding:40px;
+
+background:white;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(255,182,193,.3);
+
+}
+
+.friendship h2{
+
+font-size:38px;
+
+color:#ff4d88;
+
+margin-bottom:25px;
+
+}
+
+.friendship p{
+
+font-size:20px;
+
+line-height:2;
+
+}
+
+/* ==========================
+Cake
+========================== */
+
+.cake{
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+.cake h2{
+
+font-size:42px;
+
+color:#ff4d88;
+
+margin-bottom:25px;
+
+}
+
+.cake img{
+
+width:320px;
+
+animation:float 3s infinite;
+
+}
+
+#wishBtn{
+
+margin-top:30px;
+
+padding:15px 35px;
+
+font-size:20px;
+
+background:#ff5e99;
+
+color:white;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+#wishBtn:hover{
+
+transform:scale(1.08);
+
+}
+
+/* ==========================
+Flowers
+========================== */
+
+.flowers{
+
+text-align:center;
+
+padding:70px 20px;
+
+}
+
+.flowers img{
+
+width:340px;
+
+animation:float 4s infinite;
+
+}
+
+/* ==========================
+Wish Cards
+========================== */
+
+.wishes{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.wish-card{
+
+background:white;
+
+padding:25px;
+
+margin:20px auto;
+
+max-width:600px;
+
+border-radius:20px;
+
+font-size:22px;
+
+box-shadow:0 8px 25px rgba(255,182,193,.3);
+
+transition:.4s;
+
+}
+
+.wish-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer{
+
+padding:80px 20px;
+
+text-align:center;
+
+background:#ffd9eb;
+
+margin-top:60px;
+
+}
+
+footer h2{
+
+font-size:45px;
+
+color:#ff4d88;
+
+margin-bottom:20px;
+
+}
+
+footer p{
+
+font-size:20px;
+
+}
+
+/* ==========================
+Animations
+========================== */
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 10px pink;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 25px deeppink,
+0 0 50px hotpink;
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeOut{
+
+0%{
+
+opacity:1;
+
+}
+
+80%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+visibility:hidden;
+
+}
+
+}
+
+/* ==========================
+Floating Hearts
+========================== */
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:22px;
+
+animation:heartFloat linear infinite;
+
+opacity:.8;
+
+pointer-events:none;
+
+z-index:2;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================
+Flower Petals
+========================== */
+
+.petal{
+
+position:fixed;
+
+top:-60px;
+
+font-size:26px;
+
+pointer-events:none;
+
+animation:petalFall linear infinite;
+
+z-index:3;
+
+}
+
+@keyframes petalFall{
+
+0%{
+
+transform:
+translateY(-100px)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+translateX(150px)
+rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================
+Sparkles
+========================== */
+
+.sparkle{
+
+position:fixed;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+
+0 0 10px white,
+0 0 20px pink,
+0 0 30px hotpink;
+
+animation:twinkle 2s infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.5);
+
+}
+
+}
+
+/* ==========================
+Balloons
+========================== */
+
+.balloon{
+
+position:fixed;
+
+bottom:-200px;
+
+font-size:55px;
+
+animation:balloonFloat linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes balloonFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-140vh);
+
+}
+
+}
+
+/* ==========================
+Butterflies
+========================== */
+
+.butterfly{
+
+position:fixed;
+
+font-size:30px;
+
+animation:flyAround 12s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes flyAround{
+
+0%{
+
+left:-10%;
+top:20%;
+
+}
+
+25%{
+
+left:20%;
+top:40%;
+
+}
+
+50%{
+
+left:55%;
+top:15%;
+
+}
+
+75%{
+
+left:80%;
+top:45%;
+
+}
+
+100%{
+
+left:110%;
+top:20%;
+
+}
+
+}
+
+/* ==========================
+Glass Cards Hover
+========================== */
+
+.card:hover,
+.friendship:hover{
+
+transform:translateY(-8px);
+
+transition:.5s;
+
+box-shadow:
+
+0 20px 50px rgba(255,105,180,.3);
+
+}
+
+/* ==========================
+Section Headings
+========================== */
+
+section h2{
+
+font-family:'Great Vibes',cursive;
+
+letter-spacing:1px;
+
+}
+
+/* ==========================
+Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+
+width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#ffe8f3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff6ca8;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#ff4f93;
+
+}
+
+/* ==========================
+Image Effects
+========================== */
+
+img{
+
+max-width:100%;
+
+border-radius:25px;
+
+box-shadow:
+
+0 15px 35px rgba(255,105,180,.25);
+
+transition:.5s;
+
+}
+
+img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ==========================
+Wish Cards Animation
+========================== */
+
+.wish-card{
+
+animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+Button Animation
+========================== */
+
+button{
+
+font-family:'Poppins',sans-serif;
+
+}
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+/* ==========================
+Responsive Design
+========================== */
+
+@media(max-width:768px){
+
+.title{
+
+font-size:48px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+}
+
+.friendship h2,
+.cake h2,
+.flowers h2,
+.wishes h2{
+
+font-size:30px;
+
+}
+
+.cake img{
+
+width:230px;
+
+}
+
+.flowers img{
+
+width:250px;
+
+}
+
+#wishBtn,
+#openBtn{
+
+font-size:18px;
+
+padding:14px 28px;
+
+}
+
+footer h2{
+
+font-size:34px;
+
+}
+
+  }
+
+  /* =================================
+   Premium Background
+================================= */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+
+radial-gradient(circle at 20% 20%,rgba(255,255,255,.45),transparent 30%),
+radial-gradient(circle at 80% 15%,rgba(255,192,203,.35),transparent 30%),
+radial-gradient(circle at 50% 80%,rgba(255,255,255,.30),transparent 30%);
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+/* =================================
+   Floating Lights
+================================= */
+
+.light{
+
+position:fixed;
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+background:white;
+
+filter:blur(2px);
+
+animation:lightMove 12s linear infinite;
+
+opacity:.7;
+
+}
+
+@keyframes lightMove{
+
+0%{
+
+transform:
+translateY(100vh)
+translateX(0);
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+translateX(120px);
+
+}
+
+}
+
+/* =================================
+   Confetti
+================================= */
+
+.confetti{
+
+position:fixed;
+
+width:12px;
+
+height:12px;
+
+animation:confettiFall 4s linear forwards;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+
+@keyframes confettiFall{
+
+0%{
+
+transform:
+translateY(-50px)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+
+/* =================================
+   Firework Circle
+================================= */
+
+.firework{
+
+position:fixed;
+
+width:8px;
+
+height:8px;
+
+border-radius:50%;
+
+background:#fff;
+
+box-shadow:
+
+0 0 10px white,
+0 0 20px pink,
+0 0 40px hotpink;
+
+animation:explode 1.3s ease-out forwards;
+
+pointer-events:none;
+
+}
+
+@keyframes explode{
+
+0%{
+
+transform:scale(.1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(18);
+
+opacity:0;
+
+}
+
+}
+
+/* =================================
+   Candle Glow
+================================= */
+
+.candle{
+
+width:18px;
+
+height:70px;
+
+background:#fff5d6;
+
+margin:auto;
+
+border-radius:8px;
+
+position:relative;
+
+}
+
+.flame{
+
+width:18px;
+
+height:26px;
+
+background:gold;
+
+border-radius:50%;
+
+position:absolute;
+
+top:-18px;
+
+left:0;
+
+animation:flicker .25s infinite alternate;
+
+box-shadow:
+
+0 0 15px gold,
+0 0 35px orange,
+0 0 60px yellow;
+
+}
+
+@keyframes flicker{
+
+from{
+
+transform:rotate(-2deg);
+
+}
+
+to{
+
+transform:rotate(3deg);
+
+}
+
+}
+
+/* =================================
+   Decorative Border
+================================= */
+
+.card{
+
+border:2px solid rgba(255,255,255,.5);
+
+}
+
+/* =================================
+   Footer Glow
+================================= */
+
+footer{
+
+box-shadow:
+
+0 -5px 30px rgba(255,182,193,.35);
+
+}
+
+/* =================================
+   Smooth Fade
+================================= */
+
+.hero,
+.card,
+.friendship,
+.cake,
+.flowers,
+.wishes,
+footer{
+
+animation:appear 1.2s ease;
+
+}
+
+@keyframes appear{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =================================
+   Hover Effects
+================================= */
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.01);
+
+}
+
+.wish-card:hover{
+
+background:#fff8fb;
+
+}
+
+/* =================================
+   Selection Color
+================================= */
+
+::selection{
+
+background:#ff69b4;
+
+color:white;
+
+}
+
+/* =================================
+   End of CSS
+================================= */

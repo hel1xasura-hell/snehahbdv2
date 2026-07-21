@@ -305,21 +305,27 @@ function createFireworks(total){
 // Typewriter Effect
 // ==========================
 
-const birthdayMessage = `Dear Sneha,
+const birthdayMessage = 'Dear Sneha,
 
-Happy 17th Birthday!
+Happy 17th Birthday! 🎉🌸
 
-Today is all about celebrating you and wishing you a year filled with happiness, laughter, success and beautiful memories.
+I hope today brings you lots of happiness, laughter, delicious cake, wonderful surprises, and beautiful memories that stay with you for a long time. Birthdays are a reminder of how special someone is, and today is all about celebrating you and wishing you the very best for the year ahead.
 
-It's hard to believe it's already been a whole year since we first met. Thank you for being such a wonderful friend, and here's to many more amazing years of friendship.
+It's amazing how quickly time flies. It honestly doesn't feel like a whole year has passed since we first met. Thank you for being such a wonderful friend, and here's to many more amazing years of friendship. I'm really grateful that our paths crossed, and I hope we continue making great memories together.
 
-May you always keep smiling, keep believing in yourself, and never stop chasing your dreams.
+As you begin your 17th year, I hope it becomes one of the happiest chapters of your life. May every new day bring you confidence, good health, exciting opportunities, and reasons to smile. Whenever life becomes challenging, I hope you remember how capable and strong you are. Keep believing in yourself, because your hard work, kindness, and determination will always take you forward.
 
-I hope this birthday brings countless reasons to smile and many unforgettable moments with your family and friends.
+I also hope this year gives you plenty of moments to laugh without worrying, enjoy time with your family and friends, learn new things, and create memories you'll look back on with a smile. Never stop dreaming, never stop being curious, and never stop being the wonderful person you are.
 
-Enjoy your special day and have an amazing year ahead.
+Thank you for being such a kind and supportive friend over the past year. Even simple conversations and shared moments can become special memories, and I'm thankful for them. Friendships like these make life brighter, and I'm glad we've had the chance to know each other.
 
-Happy Birthday once again! 🎂🌸`;
+Today is your day, so enjoy every moment. Eat lots of cake, laugh a little louder, take plenty of photos, and make memories you'll treasure for years to come. May all your dreams move one step closer to becoming reality, and may this new year of your life be filled with success, peace, happiness, and countless blessings.
+
+Once again, Happy 17th Birthday, Sneha! 🎂🌸
+
+I wish you a year full of smiles, exciting adventures, unforgettable moments, good health, success in everything you do, and endless happiness. Keep shining, keep believing in yourself, and keep being the amazing friend that you are.
+
+Have a truly wonderful birthday! 🎉💖';
 
 let i = 0;
 

@@ -305,7 +305,7 @@ function createFireworks(total){
 // Typewriter Effect
 // ==========================
 
-const birthdayMessage = 'Dear Sneha,
+const birthdayMessage = `Dear Sneha,
 
 Happy 17th Birthday! 🎉🌸
 
@@ -325,7 +325,8 @@ Once again, Happy 17th Birthday, Sneha! 🎂🌸
 
 I wish you a year full of smiles, exciting adventures, unforgettable moments, good health, success in everything you do, and endless happiness. Keep shining, keep believing in yourself, and keep being the amazing friend that you are.
 
-Have a truly wonderful birthday! 🎉💖';
+Have a truly wonderful birthday! 🎉💖
+`;
 
 let i = 0;
 
